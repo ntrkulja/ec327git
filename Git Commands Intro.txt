@@ -1,0 +1,48 @@
+First thing to do:
+- in a folder: git init
+- ls -a (will show a hidden .git folder - do not mess with this)
+
+: git status (tells you which files in your folder are not tracked yet)
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+: git add readme.txt (adds the file to the staging directory?)
+CAN BE IGNORED: warning: LF will be replaced by CRLF in readme.txt.
+
+$ git commit -m "My first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Natasa@Ruby.(none)')
+
+
+git config --global user.email "ntrkulja@bu.edu"
+$ git config --global user.name "Natasa"
+
+: git log [Hash that the Git automatically creates, you can identify the commit by the first 7 chars]
+commit 0e48dca48891d450f1473262f56b11792bbaf9e4 (HEAD -> master)
+Author: Natasa <ntrkulja@bu.edu>
+Date:   Wed Nov 8 15:13:17 2017 -0500
+
+    My first commit
+
+
+Commit message should be 1 lines about what the commit does. At best they should be 3-4 phrases.
+
+
